@@ -1,13 +1,8 @@
 ---
-layout: default
+layout: post
 ---
 
-Just a rainy day and I want to try something new and interesting.
-Then I came across a
-[Mandelbrot script](https://github.com/koehlma/snippets/blob/master/python/fractals/mandelbrot.py)
-in obfuscated Python that looks like a Mandelbrot fractal.
-Some code to generate a Mandelbrot fractal just looks like this fractal.
-Awesome!
+Just a rainy day and I want to try something new and interesting. Then I came across a [Mandelbrot script](https://github.com/koehlma/snippets/blob/master/python/fractals/mandelbrot.py) in obfuscated Python that looks like a Mandelbrot fractal. Some code to generate a Mandelbrot fractal just looks like this fractal. Awesome!
 
 {% highlight python %}
 _ = (
@@ -35,15 +30,9 @@ for X in j('BM'+P(M,v*x*3+26,26,12,v,x,1,24))or C:
 
 I decided to generate an image and put the source code on it:
 
-<a href="/blog/julia-fractals/mandelbrot.bmp" rel="lightbox[mandelbrot]" title="Mandelbrot Fractal with Obfuscated Python Code used to generate It">
-<img src="/blog/julia-fractals/mandelbrot.jpg">
-</a>
+![Mandelbrot Fractal]({{ '/images/julia-fractals/mandelbrot.jpg' | prepend: site.baseurl }})
 
-After this I became interested and tried to do something my self.
-I came up with my
-[own script](https://github.com/koehlma/snippets/blob/master/python/fractals/julia.py)
-but not for Mandelbrot and also not obfuscated but it generates beautiful
-[Julia Fractals](http://en.wikipedia.org/wiki/Julia_set).
+After this I became interested and tried to do something my self. I came up with my [own script](https://github.com/koehlma/snippets/blob/master/python/fractals/julia.py) but not for Mandelbrot and also not obfuscated but it generates beautiful [Julia Fractals](http://en.wikipedia.org/wiki/Julia_set).
 
 {% highlight python %}
 #!/usr/bin/env python3
@@ -139,9 +128,7 @@ Here are just some nice examples testing various parameters.
     
     c = -0.8 + 0.2i
     
-<a href="/blog/julia-fractals/julia1.bmp" rel="lightbox[julia]" title="Julia 1">
-<img src="/blog/julia-fractals/julia1.jpg">
-</a>
+![Julia Fractal]({{ '/images/julia-fractals/julia1.jpg' | prepend: site.baseurl }})
 
 ## Julia 2
 
@@ -149,9 +136,7 @@ Here are just some nice examples testing various parameters.
     
     c = 0 + 0.8i
 
-<a href="/blog/julia-fractals/julia2.bmp" rel="lightbox[julia]" title="Julia 2">
-<img src="/blog/julia-fractals/julia2.jpg">
-</a>
+![Julia Fractal]({{ '/images/julia-fractals/julia2.jpg' | prepend: site.baseurl }})
 
 ## Julia 2 with Scale 1000
     
@@ -161,9 +146,7 @@ Here are just some nice examples testing various parameters.
     scale = 1000
     
 
-<a href="/blog/julia-fractals/julia2-scale1000.bmp" rel="lightbox[julia]" title="Julia 2 with Scale 1000">
-<img src="/blog/julia-fractals/julia2-scale1000.jpg">
-</a>
+![Julia Fractal]({{ '/images/julia-fractals/julia2-scale1000.jpg' | prepend: site.baseurl }})
 
 ## Julia 3
 
@@ -171,6 +154,4 @@ Here are just some nice examples testing various parameters.
     
     c = -1 + 0i
 
-<a href="/blog/julia-fractals/julia3.bmp" rel="lightbox[julia]" title="Julia 3">
-<img src="/blog/julia-fractals/julia3.jpg">
-</a>
+![Julia Fractal]({{ '/images/julia-fractals/julia3.jpg' | prepend: site.baseurl }})
