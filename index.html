@@ -14,7 +14,7 @@ layout: default
 <div class="row">
     <div class="col s12 m6">
         <div class="card">
-            <div class="card-content">
+            <div class="card-content" style="min-height: 210px;">
                 <span class="card-title">Jaspy</span>
                 <p>
                     <a href="https://pypi.python.org/pypi/jaspy">
@@ -45,7 +45,7 @@ layout: default
     </div>
     <div class="col s12 m6">
         <div class="card">
-            <div class="card-content">
+            <div class="card-content" style="min-height: 210px;">
                 <span class="card-title">Python GTK Spellcheck</span>
                 <p>
                     <a href="https://pypi.python.org/pypi/pygtkspellcheck">
@@ -76,19 +76,66 @@ layout: default
     </div>
 </div>
 
-
-<h3 class="center">Blog</h3>
-
-<ul class="post-list">
-    {% for post in site.posts %}
-    <li>
-        <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
-
-        <h4>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h4>
-    </li>
-    {% endfor %}
-</ul>
-
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<div class="row">
+    <div class="col s12 m6">
+        <div class="card">
+            <div class="card-content" style="min-height: 210px;">
+                <span class="card-title">Python »libuv« CFFI Wrapper</span>
+                <p>
+                    <a href="https://pypi.python.org/pypi/uv">
+                        <img src="https://img.shields.io/pypi/v/uv.svg?style=flat-square&label=latest%20version">
+                    </a>
+                    <a href="https://uv.readthedocs.org/en/latest/">
+                        <img src="https://readthedocs.org/projects/uv/badge/?version=latest&style=flat-square">
+                    </a>
+                    <a href="https://github.com/koehlma/uv">
+                        <img src="https://img.shields.io/github/stars/koehlma/uv.svg?style=social&label=Star&maxAge=2592000?style=flat-square">
+                    </a>
+                </p>
+                <p>
+                    Python »libuv« CFFI Wrapper is an object oriented CFFI based wrapper around the
+                    <a href="http://libuv.org">libuv</a> network and asynchronous IO library. It is
+                    compatible with CPython as well as PyPy and supports all handles of libuv as well
+                    as filesystem operations, dns utility functions and miscellaneous utilities.
+                </p>
+            </div>
+            <div class="card-action">
+                <a href="https://github.com/koehlma/uv/blob/master/README.rst">
+                    Readme
+                </a>
+                <a href="https://github.com/koehlma/uv">
+                    Github
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m6">
+        <div class="card">
+            <div class="card-content" style="min-height: 210px;">
+                <span class="card-title">NeatAVR</span>
+                <p>
+                    <img src="https://img.shields.io/badge/style-v0.0.1dev-red.svg?style=flat-square&label=latest version">
+                    <a href="https://neatavr.readthedocs.org/en/latest/">
+                        <img src="https://readthedocs.org/projects/neatavr/badge/?version=latest&style=flat-square">
+                    </a>
+                    <a href="https://github.com/koehlma/neatavr">
+                        <img src="https://img.shields.io/github/stars/koehlma/neatavr.svg?style=social&label=Star&maxAge=2592000?style=flat-square">
+                    </a>
+                </p>
+                <p>
+                    NeatAVR is an experimental library for AVR microchips based on C++ meta programming. It
+                    provides an elegant Arduino like programming style without introducing any runtime
+                    overhead by utilizing C++ template classes and static methods.
+                </p>
+            </div>
+            <div class="card-action">
+                <a href="https://github.com/koehlma/neatavr/blob/master/README.rst">
+                    Readme
+                </a>
+                <a href="https://github.com/koehlma/neatavr">
+                    Github
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

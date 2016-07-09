@@ -2,16 +2,14 @@ title: Maximilian Köhl
 email: mail@koehlma.de
 author: Maximilian Köhl
 
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.koehlma.de"
+description: >
+ Hello! I am Maximilian Köhl, an OpenSource enthusiast and computer science student.
+
+baseurl: ""
+url: "https://www.koehlma.de"
 permalink: /:year/:month/:title.html
 
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: koehlma
+github_username: koehlma
 
-# Build settings
 markdown: kramdown
