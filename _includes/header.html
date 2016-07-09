@@ -1,0 +1,18 @@
+<header class="site-header" style="margin-bottom: 24pt">
+    <nav class="blue">
+        <div class="nav-wrapper container">
+            <a href="{{ site.baseurl }}/" class="brand-logo">{{ site.title }}</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                {% for nav_page in site.pages %}
+                    {% if nav_page.title %}
+                        {% if nav_page.url == page.url %}
+                            <li class="active"><a href="{{ nav_page.url | prepend: site.baseurl }}">{{ nav_page.title }}</a></li>
+                        {% else %}
+                            <li><a href="{{ nav_page.url | prepend: site.baseurl }}">{{ nav_page.title }}</a></li>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </nav>
+</header>
